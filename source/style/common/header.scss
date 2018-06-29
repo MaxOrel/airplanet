@@ -1,0 +1,100 @@
+/***************Стилизуем хедер*****************/
+.header{
+  height: 75px;
+  max-height: 75px;
+  background:#4b73b5;
+  padding-top:20px;
+}
+.logo--header {
+  float: left;
+}
+.logo__link{
+  position: relative;
+  display: inline-block;
+}
+.logo__title{
+  position: absolute;
+  left: -9999px;
+  top: 0;
+}
+.header-contact {
+  float: right;
+  text-align: right;
+}
+.header-contact__time {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  @extend %clearfix;
+}
+.header-contact__phone{
+  color: #fff;
+  font-weight: $mediumFont;
+  font-size: 21px;
+  line-height: 15px;
+  text-decoration: none;
+  display: block;
+}
+.schedule{
+  position: absolute;
+  left: -9999px;
+  top: 100%;
+  width: 164px;
+  height: 70px;
+  background-color: #fff;
+  border-radius: 5px 0 5px 5px;
+  box-shadow: 0 0 10px 0 rgba(23, 59, 117, .55);
+  padding: 15px 20px;
+  font-size: 14px;
+  text-align: left;
+  z-index: 2;
+  margin-top: 20px;
+  transition: opacity 0.7s;
+  opacity: 0;
+   &__time{
+     color:#4b73b5;
+     font-weight:$boldFont;
+   }
+  &__nowork{
+    color:#000;
+    font-weight:$lightFont;
+  }
+  &:before{
+    content: '';
+    position: absolute;
+    background: #fff;
+    right: 3px;
+    top: -10px;
+    width: 19px; height: 19px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg); /* Поворачиваем на 45º */
+    box-shadow: -3px -3px 3px 0 rgba(23, 59, 117, 0.35);
+    z-index: 1;
+  }
+  &:after{
+    content: "";
+    display: block;
+    height: 20px;
+    position: absolute;
+    top: -20px;
+    left: 0;
+    right: 0;
+  }
+}
+.header-contact__time:hover .schedule{
+  opacity: 1;
+  right: 0;
+  left: initial;
+}
+.header-contact__time-link{
+  color:#fff;
+  opacity: 0.7;
+  transition: opacity 0.7s;
+  display: block;
+  font-weight: $mediumFont;
+  font-size: 14px;
+  padding-top:5px;
+}
+.header-contact__time:hover .header-contact__time-link{
+  opacity: 1;
+}

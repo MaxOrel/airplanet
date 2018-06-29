@@ -1,0 +1,140 @@
+/*Стилизуем footer*/
+.footer{
+  height:77px;
+  margin-top: -77px;
+  background:#4b73b5;
+  &-col{
+    line-height:18px;
+    color:#fff;
+    font-size:14px;
+    width:33.33%;
+    display: block;
+    position: relative;
+    &--left{
+      margin-top:15px;
+      float: left;
+      @extend %clearfix;
+    }
+    &--center{
+      float: left;
+      text-align: center;
+      & img{
+        margin-top: 20px;
+      }
+    }
+    &--right{
+      @extend %clearfix;
+      float: right;
+      margin-top: 17px;
+    }
+  }
+  &-col p{
+    margin:0;
+    padding:0;
+  }
+  &-link{
+    font-weight:$boldFont;
+    color: #fff;
+  }
+
+}
+.text--strong{
+  font-weight:$boldFont;
+}
+.social-container{
+  float: right;
+}
+.soc__title{
+  text-align: left;
+  font-weight:$boldFont;
+  margin-bottom:5px;
+}
+.socials__list{
+  font-size: 0;
+}
+.socials__item{
+  opacity:0.75;
+  display: inline-block;
+  margin-left: 8px;
+  width:21px;
+  height: 21px;
+  transition: all 1s;
+  &:first-child{
+    margin-left:0px;
+  }
+  &:hover{
+    opacity:1;
+  }
+}
+.socials__item-link{
+  display: inline-block;
+  text-indent:100%;
+  width:100%;
+  height:100%;
+  background-image: url(/assets/img/sprite.png);
+  background-repeat: no-repeat;
+  white-space:nowrap;
+  overflow: hidden;;
+  &--vk{
+    background-position: -87px -5px;
+  }
+  &--fb{
+    background-position: -391px -5px;
+  }
+  &--google{
+    background-position: -179px -5px;
+  }
+  &--twitter{
+    background-position: -361px -5px;
+  }
+  &--mail{
+    background-position: -209px -5px;
+  }
+}
+//.socials__item-link2{
+//  display: inline-block;
+//  text-indent:100%;
+//  width:100%;
+//  height:100%;
+//  white-space:nowrap;
+//  overflow: hidden;
+//  position: relative;
+//}
+//.socials__sprite{
+//  //background-image: url(/assets/img/social/sprite_icons.png);
+//  background-repeat: no-repeat;
+//  position: absolute;
+//  top: 50%;
+//  left: 50%;
+//  transform: translate(-50%,-50%);
+//  &--vk{
+//    //background-position: -224px -20px;
+//    width: 14px;
+//    height: 8px;
+//    background: url(/assets/img/social/vk.png) no-repeat 50% 50%;
+//  }
+//  &--fb{
+//    //background-position: -20px -20px;
+//    width: 6px;
+//    height: 13px;
+//    background: url(/assets/img/social/fb.png) no-repeat 50% 50%;
+//  }
+//  &--google{
+//    //background-position: -66px -20px;
+//    width: 15px;
+//    height: 9px;
+//    background: url(/assets/img/social/google.png) no-repeat 50% 50%;
+//  }
+//  &--twitter{
+//    //background-position: -173px -20px;
+//    width: 11px;
+//    height: 9px;
+//    background: url(/assets/img/social/twitter.png) no-repeat 50% 50%;
+//  }
+//  &--mail{
+//    //background-position: -121px -20px;
+//    width: 12px;
+//    height: 9px;
+//    background: url(/assets/img/social/mail.png) no-repeat 50% 50%;
+//  }
+//}

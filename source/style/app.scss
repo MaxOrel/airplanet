@@ -1,5 +1,25 @@
-body {
-  margin: 0;
-}
+//Переменные начертания
+$boldFont: 700;
+$mediumFont: 500;
+$regularFont: 400;
+$lightFont: 300;
+//Переменные размера
+$middleFont: 16px;
+$smallFont: 14px;
 
-@import 'common/greating';
+@import '_variant/_mixins';
+@import '_variant/fonts';
+@import '_variant/setup';
+@import '_variant/sprite';
+
+@import 'common/animation';
+@import 'common/intro';
+@import 'common/header';
+@import 'common/pagination';
+@import 'common/sidebar';
+@import 'common/content';
+@import 'common/price-list';
+@import 'common/form';
+@import 'common/team-list';
+@import 'common/partner';
+@import 'common/footer';

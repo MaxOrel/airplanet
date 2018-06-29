@@ -1,0 +1,76 @@
+.content-partner{
+    margin-bottom: 15px;
+  }
+  
+  /*Позиционирование inlineblock*/
+  // .content-partner__list{
+  //  display: block;
+  //  @extend %clearfix;
+  //  font-size: 0;
+  // }
+  // .content-partner__item{
+  //  width: 33.3%;
+  //  position: relative;
+  //  margin-bottom:50px;
+  //  height: 80px;
+  //  display: inline-block;
+  // }
+  // .content-partner__item-link{
+  //  width: 100%;
+  //  height: 100%;
+  //  display: inline-block;
+  // }
+  // .content-partner__item-link img{
+  //  @include centered(both);
+  //  filter: grayscale(1);
+  //  transition: filter .3s;
+  // }
+  // .content-partner__item-link:hover img{
+  //   filter: grayscale(0);
+  // }
+
+  
+  ///* Позиционирование float*/
+  .content-partner__list{
+   @extend %clearfix;
+  }
+  .content-partner__item{
+   width: 33.3%;
+   float: left;
+   position: relative;
+   margin-bottom:50px;
+   height: 78px;
+  }
+  .content-partner__item-link{
+  }
+  .content-partner__item-link img{
+   @include centered(both);
+   filter: grayscale(1);
+   transition: filter .3s;
+  }
+  .content-partner__item-link:hover img{
+   filter: grayscale(0);
+  }
+  /*Позиционирование по pirfectpixel*/
+  // .content-partner__list{
+  //   @extend %clearfix;
+  //   margin-left: -86px;
+  // }
+  // .content-partner__item{
+  //   width: 200px;
+  //   float: left;
+  //   margin-left: 68px;
+  //   position: relative;
+  //   margin-bottom: 50px;
+  //   height: 78px;
+  // }
+  // .content-partner__item-link{
+  // }
+  // .content-partner__item-link img{
+  //   @include centered(both);
+  //   filter: grayscale(1);
+  //   transition: filter .3s;
+  // }
+  // .content-partner__item-link:hover img{
+  //   filter: grayscale(0);
+  // }

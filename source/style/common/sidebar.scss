@@ -1,0 +1,98 @@
+.sidebar{
+  float: left;
+  width:180px;
+  padding-top: 40px;
+}
+.menu__item{
+  margin-bottom: 24px;
+}
+
+.menu__item-link{
+  position: relative;
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #4b73b5;
+  font-weight:$mediumFont;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 0.2em;
+  padding-left:37px;
+  &.is-active,&:hover{
+    color: #221f1f;
+  }
+  &:before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background-image: url(/assets/img/sprite.png);
+    background-repeat: no-repeat;
+  }
+  /* Вариант с inline block*/
+  //&:before{
+  //  content: "";
+  //  display: inline-block;
+  // vertical-align: middle;
+  // margin-top: -2px;
+  // margin-right:20px;
+  //  background-image: url(/assets/img/sprite.png);
+  //  background-repeat: no-repeat;
+  //}
+  &--main{
+    &:before{
+      width: 18px;
+      height: 18px;
+      background-position: -239px -5px;
+    }
+    &:hover:before {
+      width: 18px;
+      height: 18px;
+      background-position: -267px -5px;
+    }
+  }
+  &--team{
+    &:before{
+      width: 23px;
+      height: 18px;
+      background-position: -295px -5px;
+    }
+    &:hover:before {
+      width: 23px;
+      height: 18px;
+      background-position: -328px -5px;
+    }
+  }
+  &--comments{
+    &:before{
+      width: 21px;
+      height: 19px;
+      background-position: -117px -5px;
+    }
+    &:hover:before {
+      width: 21px;
+      height: 19px;
+      background-position: -148px -5px;
+    }
+  }
+}
+.is-active
+{
+  &.menu__item-link--main:before{
+    width: 18px;
+    height: 18px;
+    background-position: -267px -5px;
+  }
+  &.menu__item-link--team:before{
+    width: 23px;
+    height: 18px;
+    background-position: -328px -5px;
+  }
+  &.menu__item-link--comments:before{
+    width: 21px;
+    height: 19px;
+    background-position: -148px -5px;
+  }
+}

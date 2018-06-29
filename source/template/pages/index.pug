@@ -1,7 +1,13 @@
 extends ../_template
 
 block variables
-  - var title = 'Home page'
+  - var title = 'Index page'
 
 block content
-  include ../common/_greating
+  div.wrapper.wrapper--intro
+    div.intro
+      .intro-block
+        .logo.logo--intro
+          img(src="/assets/img/logo_intro.png").
+        a.button.button--intro(href="about.html")
+          span.button__text Перейти на сайт

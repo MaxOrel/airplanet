@@ -1,0 +1,35 @@
+.sprite {
+    background-image: url(/assets/img/spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-fb {
+    width: 20px;
+    height: 20px;
+    background-position: -10px -10px;
+}
+
+.sprite-google {
+    width: 20px;
+    height: 20px;
+    background-position: -50px -10px;
+}
+
+.sprite-mail {
+    width: 20px;
+    height: 20px;
+    background-position: -10px -50px;
+}
+
+.sprite-twiter {
+    width: 20px;
+    height: 20px;
+    background-position: -50px -50px;
+}
+
+.sprite-vk {
+    width: 20px;
+    height: 20px;
+    background-position: -90px -10px;
+}

@@ -1,15 +1,36 @@
 .sidebar{
-  float: left;
-  width:180px;
-  padding-top: 40px;
+  padding-right: 20px;
 }
+
+.menu{
+  margin-top: 40px;
+}
+.menu_row{
+  margin-top: 0;
+}
+
+.menu__list{
+  display:flex;
+  flex-direction: column;
+}
+.menu_row .menu__list{
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+
 .menu__item{
   margin-bottom: 24px;
 }
+.menu_row .menu__item{
+  margin-bottom: 0;
+  margin-right:90px;
+}
+
+.menu_row .menu__item:last-child{
+  margin-right:0;
+}
 
 .menu__item-link{
-  position: relative;
-  display: inline-block;
   text-transform: uppercase;
   text-decoration: none;
   color: #4b73b5;
@@ -17,17 +38,16 @@
   font-size: 12px;
   line-height: 12px;
   letter-spacing: 0.2em;
-  padding-left:37px;
+  display: flex;
+  align-items: center;
   &.is-active,&:hover{
     color: #221f1f;
   }
   &:before{
     content: "";
     display: block;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
+    margin-top: -2px; 
+    margin-right: 18px;
     background-image: url(/assets/img/sprite.png);
     background-repeat: no-repeat;
   }

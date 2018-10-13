@@ -6,7 +6,7 @@ block variables
 block content
     div.wrapper
         header.header
-            div.container
+            div.container.header__container
                 .logo.logo--header
                     a(href="/").logo__link
                         img(src="/assets/img/logo.png", alt="Главная страница").logo__img
@@ -18,27 +18,42 @@ block content
                             .schedule__time пн-вс: 09:00-20:00
                             .schedule__nowork обед: 14:00-14:30
         div.container
-            aside.sidebar
-                nav.menu
+            aside.sidebar.col-3
+                section.content-partner.content-partner_aside
+                    h2.content-title.content-title_small Партнеры
+                    ul.content-partner__list
+                        li.content-partner__item
+                            a(href="#").content-partner__item-link
+                                img(src="/assets/img/partners/partner1.jpg", alt="Партнер")
+                        li.content-partner__item
+                            a(href="#").content-partner__item-link
+                                img(src="/assets/img/partners/partner2.jpg", alt="Партнер")
+                        li.content-partner__item
+                            a(href="#").content-partner__item-link
+                                img(src="/assets/img/partners/partner6.jpg", alt="Партнер")
+                        li.content-partner__item
+                            a(href="#").content-partner__item-link
+                                img(src="/assets/img/partners/partner3.jpg", alt="Партнер")
+                        li.content-partner__item
+                            a(href="#").content-partner__item-link
+                                img(src="/assets/img/partners/partner4.jpg", alt="Партнер")
+                        li.content-partner__item
+                            a(href="#").content-partner__item-link
+                                img(src="/assets/img/partners/partner5.jpg")
+            main.content.col-9
+                nav.menu.menu_row
                     ul.menu__list
                         li.menu__item
                             a(href="about.html").menu__item-link.menu__item-link--main Главная
                         li.menu__item
-                            a(href="comments.html").menu__item-link.menu__item-link--comments Отзывы
+                            a(href="comments.html").menu__item-link.menu__item-link--comments.is-active Отзывы
                         li.menu__item
-                            a(href="team.html").menu__item-link.menu__item-link--team.is-active Экипаж
-            main.content
-                .breadchrumbs
-                    ul.breadchrumbs__list
-                        li.breadchrumbs__item
-                            a(href="/about.html").breadchrumbs__item-link Главная
-                        li.breadchrumbs__item
-                            a(href="#").breadchrumbs__item-link.breadchrumbs__item-link--last Экипаж
+                            a(href="team.html").menu__item-link.menu__item-link--team Экипаж
                 .content-title.content-title--team Экипаж
                 .l-team
                     ul.l-team__list
                         li.c-team__item
-                            .l-team__img-wrap
+                            .l-team__img-wrap.l-team__img-wrap_border
                                 img(src="/assets/img/team/Alex.jpg", alt="Команда").c-team__img
                                 span.c-team__img-title Алексей
                             .l-team__desc
@@ -46,7 +61,7 @@ block content
                                 span.c-team__desc-occ Главный пилот
                                 span.c-team__desc-text Высокий профессионализм, честь и отвага – все это характеристики главного пилота Белова А.В. На его счету более 700 полетов. Награжден за мужество и отвагу указом президента.
                         li.c-team__item
-                            .l-team__img-wrap
+                            .l-team__img-wrap.l-team__img-wrap_border
                                 img(src="/assets/img/team/Inna.jpg", alt="Команда").c-team__img
                                 span.c-team__img-title Инна
                             .l-team__desc
@@ -54,7 +69,7 @@ block content
                                 span.c-team__desc-occ Бортпроводник
                                 span.c-team__desc-text Благодаря деятельности этого человека, на борту самолета клиенты чувствуют себя, как дома. Инна Николаевна чутко относится ко всем требованиям клиентов, очень любит детей и всячески помогает сделать полет комфортным и приятным.
                         li.c-team__item
-                            .l-team__img-wrap
+                            .l-team__img-wrap.l-team__img-wrap_border
                                 img(src="/assets/img/team/Boris.jpg", alt="Команда").c-team__img
                                 span.c-team__img-title Борис
                             .l-team__desc
@@ -62,7 +77,7 @@ block content
                                 span.c-team__desc-occ Авиатехник
                                 span.c-team__desc-text Человек с золотыми руками, инженер и конструктор от Бога! Борис Анатольевич работает уже более 50 лет и на своем веку видел, как из старых моделей самолетов появлялись настоящие авиа шедевры.
                         li.c-team__item
-                            .l-team__img-wrap
+                            .l-team__img-wrap.l-team__img-wrap_border
                                 img(src="/assets/img/team/Elina.jpg", alt="Команда").c-team__img
                                 span.c-team__img-title Элина
                             .l-team__desc
@@ -70,7 +85,7 @@ block content
                                 span.c-team__desc-occ Диспетчер
                                 span.c-team__desc-text Ей присущ внимательный подход к расчетам, а отменная память удивляет даже самых опытных членов экипажа. За 22 года работы она стажировала более 100 диспетчеров для работы в крупнейших аэропортах страны. Знает в совершенстве 5 иностранных языков.
                         li.c-team__item
-                            .l-team__img-wrap
+                            .l-team__img-wrap.l-team__img-wrap_border
                                 img(src="/assets/img/team/Elena2.jpg", alt="Команда").c-team__img
                                 span.c-team__img-title Елена
                             .l-team__desc
@@ -78,7 +93,7 @@ block content
                                 span.c-team__desc-occ Старший бортпроводник
                                 span.c-team__desc-text Вежливая улыбка, внимательность к деталям и большой опыт работы – это лишь малая часть достоинств Елены Николаевны. Старший бортпроводник задает тон всей поездке, поэтому клиенты, которые летят с ней, заряжаются отличным настроением и гармонией.
                         li.c-team__item
-                            .l-team__img-wrap
+                            .l-team__img-wrap.l-team__img-wrap_border
                                 img(src="/assets/img/team/Yrii.jpg", alt="Команда").c-team__img
                                 span.c-team__img-title Юрий
                             .l-team__desc
@@ -107,7 +122,7 @@ block content
                             a(href="#").content-partner__item-link
                                 img(src="/assets/img/partners/partner5.jpg")
     footer.footer
-            .container
+            .container.footer__container
                 .footer-col.footer-col--left
                     p Сделано с любовью и старанием
                     p на курсе «Основы верстки» в &nbsp;

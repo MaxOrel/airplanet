@@ -1,20 +1,32 @@
 .price__item:first-child{
     margin-left: 0;
   }
+  .price{
+    margin-bottom: 60px;
+  }
+  .price__list{
+    display: flex;
+  }
   .price__item{
-    display: inline-block;
-    vertical-align: top;
-    width: 250px;
+    width:30%;
     text-align: center;
-    padding: 40px 0;
-    border-radius: 5px;
-    border: solid 1px transparent;
+    padding: 20px 0;  
     margin-left: 20px;
   }
-  .price__item--active,.price__item:hover{
+
+  //Блок цены
+  .price-item--active,.price-item:hover{
     border: solid 1px #e8e9ed;
   }
-  .price__img{
+
+  .price-item{
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 5px;
+    border: solid 1px transparent;
+    width: 100%;
+  }
+  .price-item__img{
   width: 68px;
   height: 68px;
   border-radius: 50%;
@@ -23,18 +35,18 @@
   margin: 0 auto;
   margin-bottom: 35px;
   }
-  .price__img-pic{
+  .price-item__img-pic{
     position: absolute;
     top:50%;
     left:50%;
     transform: translate(-50%,-50%);
   }
   
-  .price__block{
+  .price-item__block{
     max-width: 188px;
     margin: 0 auto 10px;
   }
-  .price__title{
+  .price-item__title{
     font-size: 10.78px;
     text-transform: uppercase;
     font-weight: 600;
@@ -42,30 +54,34 @@
     display: block;
     margin-bottom: 25px;
   }
-  .price__desc{
+  .price-item__title_big{
+    font-size: 18px;
+    letter-spacing: normal;
+  }
+  .price-item__desc{
     font-size: 18px;
     font-weight: 300;
     line-height: 30px;
   }
-  .price__block-list{
+  .price-item__block-list{
     text-align: left;
     position: relative;
   }
   
-  .price__block-item{
+  .price-item__block-item{
     line-height: 30px;
     margin-left: 25px;
   }
-  .price__block-item:before{
+  .price-item__block-item:before{
     content: "•";
     position: absolute;
     left:0;
   }
-  .price__currency{
+  .price-item__currency{
     font-size: 53.89px;
     font-weight: 500;
   }
-  .price__currency sub{
+  .price-item__currency sub{
     bottom: 0;
     font-size: 60%;
   }

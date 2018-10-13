@@ -1,7 +1,11 @@
 .content-partner{
     margin-bottom: 15px;
   }
-  
+.content-partner_aside{
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 20px;
+}
   /*Позиционирование inlineblock*/
   // .content-partner__list{
   //  display: block;
@@ -32,19 +36,20 @@
   
   ///* Позиционирование float*/
   .content-partner__list{
-   @extend %clearfix;
+    display: flex;
+    flex-wrap: wrap;
   }
   .content-partner__item{
-   width: 33.3%;
-   float: left;
+   flex: 1 1 290px;
    position: relative;
    margin-bottom:50px;
-   height: 78px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
   }
   .content-partner__item-link{
   }
   .content-partner__item-link img{
-   @include centered(both);
    filter: grayscale(1);
    transition: filter .3s;
   }

@@ -8,9 +8,9 @@ $middleFont: 16px;
 $smallFont: 14px;
 
 @import '_variant/_mixins';
+@import '_variant/sprite';
 @import '_variant/fonts';
 @import '_variant/setup';
-@import '_variant/sprite';
 
 @import 'common/animation';
 @import 'common/intro';

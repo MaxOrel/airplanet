@@ -26,15 +26,31 @@ body {
   min-width: 1100px;
   min-height: 100%;
 }
+.col-3{
+  width: calc(100%/12*3);
+}
+.col-4{
+  width: calc(100%/12*4);
+}
+.col-9{
+  width: calc(100%/12*9);
+}
 .wrapper:after {
   content: "";
   display: block;
   height: 77px;
 }
 .container {
-  width: 1060px;
+  width: 1160px;
   margin: 0 auto;
-  @extend %clearfix;
+  display: flex;
+  justify-content: space-between;
+}
+.container_width_1160{
+  width: 1160px;
+}
+.container_wrap{
+  flex-wrap: wrap;
 }
 .button{
   padding:15px 20px;

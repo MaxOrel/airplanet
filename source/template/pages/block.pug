@@ -3,10 +3,34 @@ extends ../_template
 block variables
 	- var title = 'Index page'
 block content
+	style .wrapper{
+		|	width: 1024px;
+		|	margin: 0 auto;
+		|	border: 1px solid;
+		|	background: #ccc;}
+		|.wrapper__block{
+		|	font-size: 0;
+		|	margin-left: -20px;
+		|}
+		|.block{
+		|	font-size: initial;
+		|	padding: 10px;
+		|	margin-bottom: 10px;
+		|	width: calc(100%/3 - 20px);
+		|	display: inline-block;
+		|	margin-left: 20px;
+		|}
+		|.green{
+		|	background: greenyellow;
+		|}
+		|.red{
+		|	background: burlywood;
+		|}
 	.wrapper
-		.block.green Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et, obcaecati.
-		.block.red Quia voluptatum eveniet ab deleniti ducimus in aut iste deserunt.
-		.block.green Soluta corrupti sint blanditiis iure fugit officia dolorum natus voluptates!
-		.block.red Facere voluptas enim esse quibusdam ab odit incidunt, cum molestias?
-		.block.green Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus, officia.
-		.block.red Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, sint!
+		.wrapper__block
+			.block.green Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et, obcaecati.
+			.block.red Quia voluptatum eveniet ab deleniti ducimus in aut iste deserunt.
+			.block.green Soluta corrupti sint blanditiis iure fugit officia dolorum natus voluptates!
+			.block.red Facere voluptas enim esse quibusdam ab odit incidunt, cum molestias?
+			.block.green Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus, officia.
+			.block.red Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, sint!

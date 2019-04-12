@@ -34,7 +34,11 @@ body {
 .container {
   width: 1060px;
   margin: 0 auto;
-  @extend %clearfix;
+  display: flex;
+  justify-content: space-between;
+  &_wrap{
+    flex-wrap: wrap;
+  }
 }
 .button{
   padding:15px 20px;

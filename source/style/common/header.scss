@@ -1,11 +1,12 @@
 /***************Стилизуем хедер*****************/
 .header{
-  height: 75px;
-  max-height: 75px;
   background:#4b73b5;
-  padding-top:20px;
+  padding-top:13px;
+  padding-bottom:15px;
 }
-
+.header__container{
+  align-items: center;
+}
 .logo--header {
   float: left;
 }

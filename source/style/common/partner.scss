@@ -32,11 +32,11 @@
   
   ///* Позиционирование float*/
   .content-partner__list{
-   @extend %clearfix;
+    display: flex;
+    flex-wrap: wrap;
   }
   .content-partner__item{
    width: 33.3%;
-   float: left;
    position: relative;
    margin-bottom:50px;
    height: 78px;
